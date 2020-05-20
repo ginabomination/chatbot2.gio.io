@@ -14,21 +14,22 @@ function response() {
         user.style.color = "red";
         botChat.innerHTML = greetingList[greeting] + " " + userInput.value;
         user.innerHTML = userInput.value;
-        setTimeout(() => {botChat.innerHTML = "Do you like chocolate? Y or N" }, 2000);;
+        setTimeout(() => {botChat.innerHTML = "What is your favourite colour?" }, 2000);;
         userInput.value = null;
     } 
-    
-    while(botChat.textContent == "Do you like chocolate? Y or N") {
-        user.style.color = "blue";
-        if (userInput.value == "Y") {
-            botChat.innerHTML = "Excellent!";
+    while (botChat.extContent == "What is your name?") {
+        setTimeout(() => {botChat.innerHtml = "What is your favourite colour?
+        userInput.value = user.style.colour
+        if (userInput.value == "green", "Green") {
+            botChat.innerHtml = "Mine too")
         }
-        else if (userInput.value == "N") {
-            botChat.textContent = "Pity";
+        else if (userInupt.value == "red", "Red", "orange", "Orange", "yellow", "Yellow", "green", "Green", "blue", "Blue", "purple", "Purple") {                          
+            userInput.value = user.style.colour 
         }
         else {
-            botChat.textContent = "Please type Y or N.";
-            setTimeout(() => {botChat.innerHTML = "Do you like chocolate? Y or N" }, 2000);;
+            botChat.textContent = "Please enter a simple colour. Im not an expert in my colours.";
+            setTimeout (() => {botChat.innerHtml = "What is your favourite colour?"}, 2000;;
+            userInput.value = null;
         }
     }
 }
